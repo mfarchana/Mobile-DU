@@ -2,7 +2,8 @@
 
 ### XML (Extensible Markup Language)
 XML termasuk bahasa markup, yang diprakarsai oleh W3C, selaku Konsorsium World Wide Web, yang dimana XML, merupakan versi lanjutan dari HTML(Hypertext Markup Language).  
-"Jika HTML ,hanya menampilkan  informasi ,XML memproses dan mengolah informasi. "
+"Jika HTML ,hanya menampilkan  informasi ,XML memproses dan mengolah informasi."
+
 Informasi ini bisa kita sebut sebagai element.  Setiap awalan element ,akan di awali dengan tag pembuka seperti <  dan harus di akhiri dengan tag penutup />.
 Setiap element mempunyai detail-detail informasi, yang biasa di sebut atribut. Masing-masing atribut,
 mempunyai nama dan value atau nilai.
@@ -19,7 +20,7 @@ minimal atribut yang harus ada :
 - android:layout_width (Fungsi : jenis atau ukuran lebar TextView) 
 - android:layout_height ( Fungsi : jenis atau ukuran tinggi TextView)
 
-#### Yang termasuk nilai atau value :
+Yang termasuk nilai atau value :
 
 - wrap_content ( Fungsi : value jenis atau ukuran tinggi TextView)
 - 30sp ( Fungsi : ukuran text)
