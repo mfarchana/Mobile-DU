@@ -8,7 +8,7 @@ Bahasa Pemrograman yang digunakan untuk Mobile Programming adalah JAVA, dan yang
 
 ## Struktur Folder Android Studio
 
-![burger](assets/Project%20Folder.png)
+![project](assets/Project%20Folder.png)
 
 - Manifest (app/manifest/AndroidManifest.xml )
 
@@ -33,6 +33,9 @@ Di folder keempat yaitu layout ,yang merupakan isi dari folder resource.
 
 Folder layout digunakan untuk menyimpan file-file layout yang merupakan tempat membuat komponen User Interface (antarmuka).
 
+
+## Sebuah Aplikasi Android
+![skema](assets/Diff.png)
 
 ---
 
