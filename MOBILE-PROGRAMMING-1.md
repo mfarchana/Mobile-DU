@@ -30,13 +30,13 @@ Pada Materi View, kita akan belajar
 3. ImageView
 4. Button
 
-####1. Layout
+###1. Layout
 Layout pada android terdapat 3
 1. ConstraintLayout
 2. RelativeLayout
 3. LinearLayout
 
-##### LinearLayout
+#### LinearLayout
 ```xml
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -46,7 +46,7 @@ Layout pada android terdapat 3
 ```
 LinearLayout identik dengan android:orientation yaitu VERTICAL & HORIZONTAL
 
-##### RelativeLayout
+#### RelativeLayout
 ```xml
 <RelativeLayout 
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -56,7 +56,7 @@ LinearLayout identik dengan android:orientation yaitu VERTICAL & HORIZONTAL
 ```
 RelativeLayout identik dengan pemberian value = {id} pada tiap element
 
-####2. TextView
+###2. TextView
   
 ```xml
  <TextView
@@ -69,7 +69,7 @@ RelativeLayout identik dengan pemberian value = {id} pada tiap element
         android:layout_alignParentLeft="true"/>
 ```
 
-####3. ImageView
+###3. ImageView
 ```xml
 <ImageView
         android:layout_width="match_parent"
@@ -78,7 +78,7 @@ RelativeLayout identik dengan pemberian value = {id} pada tiap element
         android:scaleType="fitXY" />
 ```
 
-####4. Button
+###4. Button
 ```xml
 <Button
         android:layout_width="wrap_content"
