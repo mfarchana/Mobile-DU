@@ -1,7 +1,6 @@
 #Pertemuan Pertama Mobile-Android Doscom University 2019
 
 Selamat anda mengambil Mobile-Android Doscom University 2019, pada akhir DU ini, anda akan paham bagaimana cara membuat single-screen Android app with tulisan and gambar.
----
 
 ![View](assets/View.png)
 
@@ -93,6 +92,7 @@ Pada android studio user interface menggunakan bahasa XML, ukuran yang ditetapka
 2. Text = sp
 3. layout = wrap_content / match_parent
 
+---
 
 ## Referensi dan Tambahan
 - :bulb: [Basic git dan github oleh hacktiv8](https://github.com/hacktiv8/phase-0-activities/blob/master/modules/git-github-basics.md)
