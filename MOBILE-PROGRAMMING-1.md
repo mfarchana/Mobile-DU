@@ -93,6 +93,8 @@ Pada android studio user interface menggunakan bahasa XML, ukuran yang ditetapka
 3. layout_width/height = wrap_content / match_parent
 
 ---
+#### ASSET
+Download : - :bulb: [Asset BirthdayCard](https://s.id/BirthdayCard/)
 #### XML
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
