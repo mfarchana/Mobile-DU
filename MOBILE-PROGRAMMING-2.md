@@ -101,7 +101,7 @@ Download : - :bulb: [Asset UI Gojek](https://s.id/UIGojekDU/)
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.aan.go_jek.MainActivity">
+    tools:context=".MainActivity">
 
     <ImageView
         android:layout_width="300dp"
