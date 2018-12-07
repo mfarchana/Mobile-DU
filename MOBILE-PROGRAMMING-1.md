@@ -90,7 +90,63 @@ RelativeLayout identik dengan pemberian value = {id} pada tiap element
 Pada android studio user interface menggunakan bahasa XML, ukuran yang ditetapkan adalah:
 1. Gambar = dp
 2. Text = sp
-3. layout = wrap_content / match_parent
+3. layout_width/height = wrap_content / match_parent
+
+---
+#### XML
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/androidparty" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/selamat_ulang_tahun"
+        android:textColor="@color/putih"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="@string/from_aan"
+        android:textColor="@color/putih"
+        android:textSize="25sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:onClick="kado"
+        android:text="Buka Kado" />
+
+</RelativeLayout>
+```
+
+### MainActivity
+#### Penambahan OnClick Kado
+```xml
+public void kado(View view) {
+            Toast.makeText(this,"Maaf belum ada kado untukmu",Toast.LENGTH_SHORT).show();
+
+    }
+```
+
+
 
 ---
 
