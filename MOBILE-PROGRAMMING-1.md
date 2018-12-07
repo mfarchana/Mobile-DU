@@ -1,6 +1,6 @@
 # Pertemuan Pertama Mobile-Android Doscom University 2019
 
-Selamat anda mengambil Mobile-Android Doscom University 2019, pada akhir DU ini, anda akan paham bagaimana cara membuat single-screen Android app with tulisan and gambar.
+Selamat anda mengambil Mobile-Android Doscom University 2019, pada akhir DU ini, anda akan paham bagaimana cara membuat single-screen Android app dengan tulisan and gambar.
 
 ![View](assets/View.png)
 
