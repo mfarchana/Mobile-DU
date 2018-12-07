@@ -1,4 +1,4 @@
-#Pertemuan Pertama Mobile-Android Doscom University 2019
+# Pertemuan Pertama Mobile-Android Doscom University 2019
 
 Selamat anda mengambil Mobile-Android Doscom University 2019, pada akhir DU ini, anda akan paham bagaimana cara membuat single-screen Android app with tulisan and gambar.
 
@@ -11,11 +11,11 @@ Dalam pelatihan ini, kita akan belajar step-by-step bagaimana untuk membuat sebu
 Kemudian anda bisa untuk kostumisasi kartu ucapan untuk seseorang yang spesial pada masa mendatang. 
 Pada pelatihan ini, anda akan belajar bagaimana menggunakan Android Studio, alat yang digunakan developers untuk membuat aplikasi.
 
-##Inti dari Aplikasi Android
+## Inti dari Aplikasi Android
 
 ![View](assets/Diff.png)
 
-##Views
+## Views
 
 ![View](assets/View.png)
 
@@ -29,13 +29,13 @@ Pada Materi View, kita akan belajar
 3. ImageView
 4. Button
 
-###1. Layout
+### 1. Layout
 Layout pada android terdapat 3
 1. ConstraintLayout
 2. RelativeLayout
 3. LinearLayout
 
-#### LinearLayout
+### LinearLayout
 ```xml
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -45,7 +45,7 @@ Layout pada android terdapat 3
 ```
 LinearLayout identik dengan android:orientation yaitu VERTICAL & HORIZONTAL
 
-#### RelativeLayout
+### RelativeLayout
 ```xml
 <RelativeLayout 
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -55,7 +55,7 @@ LinearLayout identik dengan android:orientation yaitu VERTICAL & HORIZONTAL
 ```
 RelativeLayout identik dengan pemberian value = {id} pada tiap element
 
-###2. TextView
+### 2. TextView
   
 ```xml
  <TextView
@@ -68,7 +68,7 @@ RelativeLayout identik dengan pemberian value = {id} pada tiap element
         android:layout_alignParentLeft="true"/>
 ```
 
-###3. ImageView
+### 3. ImageView
 ```xml
 <ImageView
         android:layout_width="match_parent"
@@ -77,7 +77,7 @@ RelativeLayout identik dengan pemberian value = {id} pada tiap element
         android:scaleType="fitXY" />
 ```
 
-###4. Button
+### 4. Button
 ```xml
 <Button
         android:layout_width="wrap_content"
