@@ -114,8 +114,8 @@ Pada android studio user interface menggunakan bahasa XML, ukuran yang ditetapka
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:text="@string/selamat_ulang_tahun"
-        android:textColor="@color/putih"
+        android:text="Selamat Ulang Tahun"
+        android:textColor="#FFF"
         android:textSize="30sp" />
 
     <TextView
@@ -123,8 +123,8 @@ Pada android studio user interface menggunakan bahasa XML, ukuran yang ditetapka
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:text="@string/from_aan"
-        android:textColor="@color/putih"
+        android:text="From, DOSCOM"
+        android:textColor="#FFF"
         android:textSize="25sp" />
 
     <Button
