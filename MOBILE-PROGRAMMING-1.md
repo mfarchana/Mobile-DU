@@ -6,7 +6,7 @@ Selamat anda mengambil Mobile-Android Doscom University 2019, pada akhir DU ini,
 
 Dalam pelatihan ini, kita akan belajar step-by-step bagaimana untuk membuat sebuah aplikasi, seperti kartu ucapan selamat ulang tahun ini, dan bagaimana untuk menjalankannya pada sebuah android device.
 
-![Card](assets/birthdaycard.png)
+![Card](assets/SSUltah.png)
 
 Kemudian anda bisa untuk kostumisasi kartu ucapan untuk seseorang yang spesial pada masa mendatang. 
 Pada pelatihan ini, anda akan belajar bagaimana menggunakan Android Studio, alat yang digunakan developers untuk membuat aplikasi.
@@ -149,7 +149,99 @@ public void kado(View view) {
 ```
 
 
+---
+## Hello Toast
+![View](assets/Toast.png)
+#### XML
+```xml
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.hellotoast.MainActivity">
 
+    <Button
+        android:id="@+id/button_toast"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorPrimary"
+        android:onClick="showToast"
+        android:text="@string/button_label_toast"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_count"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/colorPrimary"
+        android:onClick="countUp"
+        android:text="@string/button_label_count"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/show_count"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#FFFF00"
+        android:gravity="center_vertical"
+        android:text="@string/count_initial_value"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="160sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button_count"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_toast" />
+</android.support.constraint.ConstraintLayout>
+```
+
+#### MainActivity
+```xml
+public class MainActivity extends AppCompatActivity {
+
+    private int mCount = 0;
+    private TextView mShowCount;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        mShowCount = (TextView) findViewById(R.id.show_count);
+    }
+
+    public void showToast(View view){
+        Toast toast = Toast.makeText(this, R.string.toast_message,
+                Toast.LENGTH_SHORT);
+        toast.show();
+    }
+    
+    public void countUp(View view){
+        mCount++;
+        if (mShowCount != null)
+            mShowCount.setText(Integer.toString(mCount));
+    }
+    
+}
+```
 ---
 
 ## Referensi dan Tambahan
