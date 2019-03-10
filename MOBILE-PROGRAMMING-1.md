@@ -243,6 +243,17 @@ public class MainActivity extends AppCompatActivity {
 }
 ```
 ---
+### Git
+$ git config --global user.name "Doscom"
+$ git config --global user.email Mobile@doscom.org
+
+$ git init
+$ git add .
+$ git commit -m "first commit"
+$ git remote add origin https://github.com/........./
+$ git push -u origin master
+
+---
 
 ## Referensi dan Tambahan
 - :bulb: [Basic git dan github oleh hacktiv8](https://github.com/hacktiv8/phase-0-activities/blob/master/modules/git-github-basics.md)
