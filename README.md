@@ -12,8 +12,6 @@ Doscom University (DU) adalah kegiatan belajar mengajar yang berbentuk workshop 
 
 ### :book: [Mobile Programming Pertemuan 2](./MOBILE-PROGRAMMING-2.md)
 
-### :book: [Mobile Programming Pertemuan 3](./MOBILE-PROGRAMMING-3.md)
-
 
 ---
 
