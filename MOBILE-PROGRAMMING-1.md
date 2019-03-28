@@ -244,14 +244,15 @@ public class MainActivity extends AppCompatActivity {
 ```
 ---
 ### Git
+```GIT
 $ git config --global user.name "Doscom"
 $ git config --global user.email Mobile@doscom.org
-
 $ git init
 $ git add .
 $ git commit -m "first commit"
 $ git remote add origin https://github.com/........./
 $ git push -u origin master
+```
 
 ---
 
