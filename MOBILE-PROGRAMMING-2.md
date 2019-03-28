@@ -6,107 +6,135 @@ Kita akan membuat aplikasi Pemesanan app, dimana user dapat memesan kopi.
 ![Card](assets/intent.png)
 
 ## Goals !
-![Card](assets/Screenshot_1.png)
+![Card](assets/ss1.jpeg)
 
-![Card](assets/Screenshot_2.png)
+![Card](assets/ss2.jpeg)
 
 ### User Interface
-![Card](assets/main.png)
+![Card](assets/ssinter.jpeg)
 ### XML
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
     tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Name"
-            android:id="@+id/edtName"
-            android:inputType="textPersonName"
-            android:layout_marginBottom="16dp"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Topping"/>
-        <CheckBox
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Whipped Cream (+500)"
-            android:id="@+id/cbWCream"/>
-        <CheckBox
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Chocolate (+500)"
-            android:id="@+id/cbChoco"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Quantity"/>
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:background="@drawable/corner"
+            android:src="@drawable/kopi"/>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <Button
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:text="-"
-                android:textStyle="bold"
-                android:textSize="18sp"
-                android:onClick="decrement"/>
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="Name"
+                android:inputType="textPersonName" />
+
             <TextView
-                android:layout_width="38dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="14sp"
-                android:textAlignment="center"
-                android:text="0"
-                android:id="@+id/tvQuantity"/>
-            <Button
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:text="+"
-                android:textStyle="bold"
-                android:textSize="18sp"
-                android:onClick="increment"/>
-        </LinearLayout>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Summary : "
-            android:textSize="18sp"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/tvSummary"
-            android:textSize="18sp"/>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <Button
-                android:layout_width="wrap_content"
+                android:text="Topping" />
+
+            <CheckBox
+                android:id="@+id/cbWCream"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Show Report"
-                android:layout_weight="1"
-                android:onClick="btnReport"/>
-            <Button
-                android:layout_width="wrap_content"
+                android:text="Whipped Cream (+500)" />
+
+            <CheckBox
+                android:id="@+id/cbChoco"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Submit"
-                android:layout_weight="1"
-                android:onClick="submitOrder"/>
+                android:text="Chocolate (+500)" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Quantity" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:onClick="decrement"
+                    android:text="-"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvQuantity"
+                    android:layout_width="38dp"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:onClick="increment"
+                    android:text="+"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Summary : "
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvSummary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="btnReport"
+                    android:text="Show Report" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="submitOrder"
+                    android:text="Submit" />
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
- </LinearLayout>
+</ScrollView>
+
 
 ```
 
@@ -259,9 +287,10 @@ Kita akan membuat aplikasi Pemesanan app, dimana user dapat memesan kopi.
     }
 
     private String CreateOrderSummary(int price, String name, String topping){
-        String priceMessage = "Nama : "+name
-                +"\nQuantity : "+quantity
-                +"\nTopping  : "+topping
+        String priceMessage =
+                 "Nama         : "+name
+                +"\nQuantity    : "+quantity
+                +"\nTopping     : "+topping
                 +"\nTotal Harga : Rp. "+price;
         return priceMessage;
     }
